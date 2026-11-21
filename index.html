@@ -71,6 +71,8 @@
   .item__meta { font-size: 14px; line-height: 1.6; color: var(--muted); }
   .item-link { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 16px 0; text-decoration: none; }
   .arrow { flex-shrink: 0; }
+  .group__label { margin: 0; padding: 32px 0 4px; font-size: 13px; font-weight: 500; letter-spacing: .12em; color: var(--muted); }
+  .group:first-of-type .group__label { padding-top: 20px; }
 
   .contact { min-height: 60px; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 8px 0; }
   .contact__label { flex-shrink: 0; font-size: 14px; color: var(--muted); }
@@ -142,17 +144,35 @@
 
   <section aria-labelledby="s3">
     <h2 id="s3"><span class="num">03</span><span>榮譽</span></h2>
-    <ul>
-      <li class="stack item"><span class="item__title">呂鳳章先生紀念獎章</span><span class="item__meta">中華民國管理科學學會．2026</span></li>
-      <li class="stack item"><span class="item__title">第 1 屆、第 4 屆青年公益實踐計畫得主</span><span class="item__meta">慈濟基金會．2018、2021</span></li>
-      <li class="stack item"><span class="item__title">中華民國第 58 屆十大傑出青年</span><span class="item__meta">國際青年商會中華民國總會．2020</span></li>
-      <li class="stack item"><span class="item__title">國立臺灣科技大學機械工程系傑出校友</span><span class="item__meta">國立臺灣科技大學．2020</span></li>
-      <li class="stack item"><span class="item__title">未來教育台灣一百 Top 10</span><span class="item__meta">遠見雜誌．2019</span></li>
-      <li class="stack item"><span class="item__title">第 13 屆、第 15 屆 KEEP WALKING 夢想資助計畫得主</span><span class="item__meta">DIAGEO．2016、2018</span></li>
-      <li class="stack item"><span class="item__title">BeChangeMaker Top 12</span><span class="item__meta">WorldSkills．2018</span></li>
-      <li class="stack item"><span class="item__title">新北市立新北高工傑出校友</span><span class="item__meta">新北市立新北高工．2018</span></li>
-      <li class="stack item"><span class="item__title">新世代領袖</span><span class="item__meta">天下雜誌．2018</span></li>
-    </ul>
+    <div class="group">
+      <h3 class="group__label">獎章與表揚</h3>
+      <ul>
+        <li class="stack item"><span class="item__title">呂鳳章先生紀念獎章</span><span class="item__meta">中華民國管理科學學會．2026</span></li>
+        <li class="stack item"><span class="item__title">中華民國第 58 屆十大傑出青年</span><span class="item__meta">國際青年商會中華民國總會．2020</span></li>
+      </ul>
+    </div>
+    <div class="group">
+      <h3 class="group__label">國際與媒體評選</h3>
+      <ul>
+        <li class="stack item"><span class="item__title">未來教育台灣一百 Top 10</span><span class="item__meta">遠見雜誌．2019</span></li>
+        <li class="stack item"><span class="item__title">BeChangeMaker Top 12</span><span class="item__meta">WorldSkills．2018</span></li>
+        <li class="stack item"><span class="item__title">新世代領袖</span><span class="item__meta">天下雜誌．2018</span></li>
+      </ul>
+    </div>
+    <div class="group">
+      <h3 class="group__label">計畫資助</h3>
+      <ul>
+        <li class="stack item"><span class="item__title">第 1 屆、第 4 屆青年公益實踐計畫得主</span><span class="item__meta">慈濟基金會．2018、2021</span></li>
+        <li class="stack item"><span class="item__title">第 13 屆、第 15 屆 KEEP WALKING 夢想資助計畫得主</span><span class="item__meta">DIAGEO．2016、2018</span></li>
+      </ul>
+    </div>
+    <div class="group">
+      <h3 class="group__label">傑出校友</h3>
+      <ul>
+        <li class="stack item"><span class="item__title">國立臺灣科技大學機械工程系傑出校友</span><span class="item__meta">國立臺灣科技大學．2020</span></li>
+        <li class="stack item"><span class="item__title">新北市立新北高工傑出校友</span><span class="item__meta">新北市立新北高工．2018</span></li>
+      </ul>
+    </div>
   </section>
 
   <section aria-labelledby="s4">
